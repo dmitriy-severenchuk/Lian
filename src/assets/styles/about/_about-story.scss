@@ -1,0 +1,288 @@
+.story{
+    width: 100%;
+    background-color: #fafafa;
+}
+.story_inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    @include for-tablet{
+        flex-direction: column;
+        justify-content: start;
+        position: relative;
+        padding-top: 100px;
+        &:after{
+            display: block;
+            content: '';
+            width: 70%;
+            height: 2px;
+            background-color: $grey;
+            position: absolute;
+            top: 52px;
+            left: calc(50% - 35%);
+        }
+        &:before{
+            display: block;
+            content: '';
+            width: 50%;
+            height: 2px;
+            background-color: $grey;
+            position: absolute;
+            top: 40px;
+            left: calc(50% - 25%);
+        }
+    }
+    @include for-iphone-plus-L {
+        padding-top: 80px;
+        &:after{
+            top: 46px;
+        }
+        &:before{
+            top: 34px;
+        }
+    }
+    @include for-iphone-SE {
+        padding-top: 60px;
+        &:after{
+            top: 34px;
+        }
+        &:before{
+            top: 26px;
+        }
+    }
+}
+.story_image{
+    width: 50%;
+    height: 600px;
+    @include for-laptop{
+        height: inherit;
+        object-fit: cover;
+    }
+    @include for-tablet{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.story_main{
+    width: 50%;
+    margin-left: 50px; 
+    @include for-laptop-small{
+        margin-left: 35px;
+    }
+    @include for-laptop-small{
+        margin-left: 35px;
+    }
+    @include for-tablet{
+        width: 100%;
+        margin-left: inherit;
+        margin-top: 40px;
+    }
+    &-title{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color:$dark;
+        margin-bottom: 20px;
+    }
+    &-text{
+        max-width: 540px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2;
+        color:$grey;
+        padding-bottom: 20px;
+        @include for-tablet-L{
+            line-height: 1.7;
+        }
+        @include for-tablet{
+            max-width: inherit;
+            padding-right: 20px;
+        }
+        @include for-iphone-plus{
+            max-width: inherit;
+            padding-right: 15px;
+        }
+    }
+}
+
+// SKILLS
+
+.story_skills{
+    width: 100%;
+}
+.story_skills_item{
+    width: 100%;
+    margin-top: 27px;
+    &-title{
+        font-size: 400;
+        font-weight: 700;
+        color:$dark;
+        margin-bottom: 15px;
+    }
+    &-bar{
+        width: 98%;
+        height: 10px;
+        background-color: #ebebeb;
+        position: relative;
+        @include for-laptop{
+            width: 95%;
+        }
+        @include for-tablet{
+            width: 85%;
+        }
+        &-rectangle{
+            position: absolute;
+            top: -360%;
+            left: 99%;
+        }
+        &:after{
+            content: '';
+            display: block;
+            width: 98%;
+            height: 2px;
+            background-color:$grey;
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 1%;
+        }
+        &:before{
+            display: block;
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-image: url(./assets/images/about/eclipse.png);
+            position: absolute;
+            top: calc(50% - 6px);
+            right: 0;
+            z-index: 1;
+        } 
+        &-percent{
+            font-size: 12px;
+            font-weight: 400;
+            color:$white;
+            position: absolute;
+            top: -326%;
+            left: 93%;
+            z-index: 2;  
+        }
+    }
+}
+.--ps{
+    &:after{
+        content: '';
+        display: block;
+        width: 90%;
+        height: 2px;
+        background-color:$grey;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 1%;
+    }
+    &:before{
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(./assets/images/about/eclipse.png);
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 8%;
+        z-index: 1;
+    }
+}
+.--br{
+    &:after{
+        content: '';
+        display: block;
+        width: 95%;
+        height: 2px;
+        background-color:$grey;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 1%;
+    }
+    &:before{
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(./assets/images/about/eclipse.png);
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 3%;
+        z-index: 1;
+    }
+}
+.--pgr{
+    &:after{
+        content: '';
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color:$grey;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 1%;
+    }
+    &:before{
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(./assets/images/about/eclipse.png);
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 48%;
+        z-index: 1;
+    }
+}
+.--web{
+    &:after{
+        content: '';
+        display: block;
+        width: 85%;
+        height: 2px;
+        background-color:$grey;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 1%;
+    }
+    &:before{
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(./assets/images/about/eclipse.png);
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 13%;
+        z-index: 1;
+    }
+}
+.--ps-rec{
+    left: 91%;
+}
+.--br-rec{
+    left: 96%;
+}
+.--pgr-rec{
+    left: 51%;
+}
+.--web-rec{
+    left: 86%;
+}
+// percent
+.--ps-per{
+    left: 93%;
+}
+.--br-per{
+    left: 98%;
+}
+.--pgr-per{
+    left: 53%;
+}
+.--web-per{
+    left: 88%;
+}

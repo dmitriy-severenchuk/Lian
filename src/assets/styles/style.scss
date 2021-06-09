@@ -1,0 +1,56 @@
+@import "media";
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:#9c9c9c;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    @include for-laptop{
+      padding: 0 20px;
+    }
+}
+
+.scroll_hidden{
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+button:active {padding: 0;}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+
+$grey:#777777;
+$white:#ffffff;
+$dark:#000000;
+
+@import "header";
+@import "home/home-intro";
+@import "home/home-catalog";
+@import "about/about-intro";
+@import "about/about-story";
+@import "about/about-team";
+@import "portfolio/portfolio-intro";
+@import "portfolio/portfolio-popup";
+@import "portfolio/portfolio-portfolio";
+@import "portfolio/portfolio-works";
+@import "blog/blog-intro";
+@import "blog/blog-blog";
+@import "contact/contact-intro";
+@import "contact/contact-form";
+@import "contact/contact-strings";
+@import "contact/contact-values";
+@import "footer";

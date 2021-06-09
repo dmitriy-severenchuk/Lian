@@ -1,0 +1,106 @@
+.contact_intro{
+    width: 100%;
+    height: 440px;
+    background: url(./assets/images/about/about_bg2.png) no-repeat #f1f1f3;
+    background-position: 100% -12%;
+    position: relative;
+    @include for-tablet{
+        height: 390px;
+        background-position: -100% -5%;
+    } 
+    @include for-tablet-small{
+        background-position: 0 -4%;
+    }
+    @include for-iphone-plus-L {
+        background-image: none;
+        height: auto;
+    }
+}
+.contact_intro_inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    @include for-iphone-plus-L {
+        padding-top: calc(100px + 64px);
+        padding-bottom: 100px;
+    }
+    @include for-iphone-plus{
+        padding-top: calc(85px + 50px);
+        padding-bottom: 85px;
+        align-items: center;
+    }
+    @include for-iphone-seven{
+        padding-top: calc(75px + 47px);
+        padding-bottom: 75px;
+    }
+}   
+.contact_intro_title{
+    text-transform: uppercase;
+    background-color: $dark;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: $white;
+    padding: 0 40px;
+    margin-top: 205px;
+    @include  for-laptop{
+        font-size: 44px;
+    }
+    @include for-laptop-small{
+        font-size: 40px;
+    } 
+    @include for-tablet{
+        margin-top: 180px;
+        font-size: 36px;
+    } 
+    @include for-tablet-small{
+        font-size: 32px;
+        padding: 0 35px;
+        margin-top: 190px;
+    }
+    @include for-iphone-plus-L {
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-top: inherit;
+        padding: 0 26px;
+    }
+    @include for-iphone-plus{
+        text-align: center;
+        font-size: 26px;
+        padding: 0 22px;
+    }
+    @include for-iphone-seven{
+        font-size: 22px;
+        padding: 0 12px;
+    }
+    @include for-iphone-SE{
+        font-size: 20px;
+    }
+}
+.contact_intro_subtitle{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: $dark;
+    margin-top: 35px;
+    @include  for-laptop{
+        margin-top: 25px;
+    }
+    @include for-tablet{
+        font-size: 16px;
+    } 
+    @include for-tablet-small{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    @include for-iphone-plus{
+        letter-spacing: 3px;
+    }
+    @include for-iphone-seven{
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-top: 16px;
+    }
+}

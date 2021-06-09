@@ -1,0 +1,170 @@
+.portfolio_popup_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000080;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+}
+.portfolio_popup{
+    overflow: hidden;
+    width: 48%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 16px 22px;
+    position: fixed;
+    top: calc(50% - 90px);
+    @include for-laptop{
+        width: 50%;
+    }
+    @include for-laptop-small{
+        width: 52%;
+    }
+    @include for-tablet-L{
+        width: 60%;
+    }
+    @include for-tablet{
+        height: 160px;
+        width: 65%;
+    }
+    @include for-tablet-small{
+        width: 75%;
+        padding: 14px 20px;
+    }
+    @include for-iphone-plus-L{
+        width: 83%;
+        height: 140px;
+    }
+    @include for-iphone-plus{
+        width: 86%;
+    }
+    @include for-iphone-seven{
+        width: 90%;
+        padding: 12px 16px;
+    }
+    @include for-iphone-SE{
+        width: 97%;
+        height: 130px;
+    }
+}
+.portfolio_popup_header{
+    display: flex;
+    justify-content: space-between;
+    &-title{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: $dark;
+        @include for-tablet{
+            font-size: 16px;
+        }
+        @include for-iphone-plus-L{
+            font-size: 16px;
+        }
+        @include for-iphone-seven{
+            font-size: 14px;
+        }
+    }
+    &-close{
+        cursor: pointer;
+        font-size: 22px;
+        color: $grey;
+        transition: all linear .1s; 
+        &:hover{
+            color: rgb(204, 34, 34);
+        }
+        @include for-tablet{
+            font-size: 20px;
+        }
+        @include for-tablet-small{
+            font-size: 18px;
+        }
+        @include for-iphone-seven{
+            font-size: 16px;
+        }
+        @include for-iphone-SE{
+            font-size: 14px;
+        }
+    }
+}
+.portfolio_popup_inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    @include for-tablet{
+        padding-top: 30px;
+    }
+    @include for-tablet-small{
+        padding-top: 30px;
+    }
+}
+.portfolio_popup_content{
+    display: flex;
+}
+.portfolio_popup_content-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 6px;
+    transition: all linear .1s;
+    &:hover{
+        background-color: $grey;
+    }
+    &:hover .--social_popup{
+        color: $white;
+    }
+    @include for-laptop-small{
+       width: 48px;
+       height: 48px;
+    }
+    @include for-tablet-small{
+        width: 45px;
+        height: 45px;
+    }
+    @include for-iphone-plus-L{
+        width: 40px;
+        height: 40px;
+    }
+    @include for-iphone-plus{
+        width: 35px;
+        height: 35px;
+        margin: 0 7px;
+    }
+    @include for-iphone-seven{
+        width: 30px;
+        height: 30px;
+    }
+}
+.--social_popup{
+    text-decoration: none;
+    font-size: 22px;
+    color: #777777;
+    text-align: center;
+    transition: color linear .1s;
+    @include for-laptop{
+        font-size: 20px;
+    }
+    @include for-laptop-small{
+        font-size: 18px;
+    }
+    @include for-tablet-small{
+        font-size: 16px;
+    }
+    @include for-iphone-plus-L{
+        font-size: 14px;
+    }
+    @include for-iphone-seven{
+        font-size: 13px;
+    }
+}

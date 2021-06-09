@@ -1,0 +1,79 @@
+.works{
+    width: 100%;
+    background-color: #fafafa;
+}
+.works_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+}
+.works_title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    color: #000000;
+    @include for-tablet-L{
+        font-size: 26px;
+    }
+    @include for-tablet{
+        font-size: 24px;
+    }
+    @include for-tablet-small{
+        font-size: 30px;
+    }
+    @include for-iphone-plus-L{
+        font-size: 26px;
+    }
+    @include for-iphone-plus{
+        font-size: 24px;
+    }
+    @include for-iphone-seven{
+        letter-spacing: 3px;
+    }
+    @include for-iphone-SE{
+        font-size: 22px;
+    }
+}
+.works_subtitle{
+    text-align: center;
+    max-width: 535px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #777777;
+    margin: 20px 0 50px 0;
+}
+.works_box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include for-iphone-plus{
+        flex-direction: column;
+    }
+}
+.works_item{
+    width: 30%;
+    margin-right: 35px;
+    &:last-child{
+        margin: 0;
+    }
+    @include for-laptop-small{
+        margin-right: 30px;
+    }
+    @include for-tablet{
+        margin-right: 15px;
+    }
+    @include for-tablet-L{
+        width: 33%;
+        margin-right: 9px;
+    }
+    @include for-iphone-plus{
+        width: 100%;
+        margin: 10px 0;
+        &:last-child{
+            margin: 10px 0;
+        }
+    }
+}

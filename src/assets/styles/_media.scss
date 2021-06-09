@@ -1,0 +1,54 @@
+@mixin for-laptop {
+    @media (max-width: 1159px){
+      @content;
+    }
+}
+
+
+@mixin for-laptop-small{
+  @media (max-width: 970px){
+    @content;
+  }
+}
+
+@mixin for-tablet-L {
+  @media (max-width: 850px){
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin for-tablet-small {
+  @media (max-width: 668px){
+    @content;
+  }
+}
+
+@mixin for-iphone-plus-L {
+  @media (max-width: 568px){
+    @content;
+  }
+}
+
+@mixin for-iphone-plus {
+  @media (max-width: 426px){
+    @content;
+  }
+}
+
+@mixin for-iphone-seven {
+  @media (max-width: 376px){
+    @content;
+  }
+}
+
+@mixin for-iphone-SE {
+  @media (max-width: 329px){
+    @content;
+  }
+}

@@ -1,0 +1,41 @@
+.contact_strings{
+    width: 100%;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #fafafa;
+    padding: 20px 0;
+    @include for-laptop-small{
+        padding: 0 0 20px
+    } 
+    @include for-tablet-small{
+         display: none;   
+    }
+    &-item{
+        height: 4px;
+        background-color: $dark;
+        margin-bottom: 8px;
+        transition: all .3s;
+        &:nth-child(1){
+            width: 35%;          
+        }
+        &:nth-child(2){
+            width: 32%;           
+        }
+        &:nth-child(3){
+            width: 29%;
+        }
+        &:nth-child(4){
+            width: 26%;
+        }
+        &:nth-child(5){
+            width: 23%;
+        }
+        @include for-tablet-L{
+            &:nth-child(5){
+                display: none;
+            }
+        } 
+    }
+}    
