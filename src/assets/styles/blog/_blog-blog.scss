@@ -130,10 +130,13 @@
         }
     }
     @include for-iphone-seven{
-        transform: translate(-14%, 0);
+        transform: translate(0);
         &.--only_photo{
             transform: translate(0);
         }
+    }
+    @include for-iphone-SE{
+        transform: translate(-15%, 0);
     }
     }
 }

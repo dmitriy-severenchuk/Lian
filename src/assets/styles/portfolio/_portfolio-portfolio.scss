@@ -250,12 +250,8 @@
         height: 45px;
     }
     @include for-iphone-plus {
-        width: 100px;
-        height: 40px;
-    }
-    @include for-iphone-seven {
-        width: 100px;
-        height: 36px;
+        width: 120px;
+        height: 42px;
     }
     &-title{
         margin-left: 6px;
@@ -423,16 +419,6 @@
         background-image: url(./assets/images/grid/portfolio4.jpg);
     }
 }
-
-
-.fade-enter-active, .fade-leave-active {
-    transition: opacity .5s;
-  }
-  .fade-enter, .fade-leave-to {
-    opacity: 0;
-  }
-
-
   // Popup
 
 .portfolio_component{

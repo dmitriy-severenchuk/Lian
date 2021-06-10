@@ -14,7 +14,7 @@
       <div class="portfolio_popup_inner">
         <div class="portfolio_popup_content">
           <a
-            href="https://www.facebook.com/dima.severencuk"
+            href="https://www.facebook.com/"
             target="_blank"
             class="portfolio_popup_content-item"
             ><i class="fab fa-facebook-f --social_popup"></i
@@ -50,7 +50,7 @@
             ><i class="fab fa-pinterest-p --social_popup"></i
           ></a>
           <a
-            href="https://www.instagram.com/dimakroksy/"
+            href="https://www.instagram.com/"
             target="_blank"
             class="portfolio_popup_content-item"
             ><i class="fab fa-instagram --social_popup"></i
