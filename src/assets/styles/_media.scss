@@ -4,7 +4,6 @@
     }
 }
 
-
 @mixin for-laptop-small{
   @media (max-width: 970px){
     @content;
